@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Follow Cursor</title><link rel="stylesheet" href="shared.css"></head><body><main class="wrap"><a href="index.html">Back</a><h1 class="demo-title">Follow-cursor physics</h1><p class="lead">A spring chases the pointer coordinates, creating lag, acceleration and natural settling.</p><section class="stage"><div style="max-width:650px;margin:auto;padding-top:100px;text-align:center"><h2>Move your pointer anywhere</h2><p class="muted">The green particle is not directly positioned on the pointer. It is always catching up.</p></div></section><div class="follow-dot" data-follower></div><pre class="code">new FollowCursor(dot, {
+  stiffness: 110,
+  damping: 15,
+  offsetX: -12,
+  offsetY: -12
+});</pre></main><script type="module">import{FollowCursor}from"../src/index.js";new FollowCursor(document.querySelector('[data-follower]'),{stiffness:110,damping:15,offsetX:0,offsetY:0});</script></body></html>

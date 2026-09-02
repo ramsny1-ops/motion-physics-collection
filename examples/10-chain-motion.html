@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chain Motion</title><link rel="stylesheet" href="shared.css"></head><body><main class="wrap"><a href="index.html">Back</a><h1 class="demo-title">Chained animations</h1><p class="lead">Each node runs the same spring, but activation propagates through the chain at a controlled interval.</p><div class="controls"><button class="primary" data-play>Play chain</button><button data-reset>Reset</button></div><section class="stage chain" data-chain><div class="chain-item">1</div><div class="chain-item">2</div><div class="chain-item">3</div><div class="chain-item">4</div><div class="chain-item">5</div></section><pre class="code">const chain = new ChainMotion(items, {
+  gap: 0.11,
+  distance: 150
+});
+chain.play();</pre></main><script type="module">import{ChainMotion}from"../src/index.js";const chain=new ChainMotion(document.querySelectorAll('.chain-item'),{gap:.11,distance:150});document.querySelector('[data-play]').onclick=()=>chain.play();document.querySelector('[data-reset]').onclick=()=>chain.reset();chain.play();</script></body></html>

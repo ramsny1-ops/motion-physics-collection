@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gravity Field</title><link rel="stylesheet" href="shared.css"></head><body><main class="wrap"><a href="index.html">Back</a><h1 class="demo-title">Gravity-like motion</h1><p class="lead">DOM nodes get vertical acceleration, velocity, bounce restitution and air resistance.</p><section class="physics-box" data-gravity><div class="body" data-body data-x="50" data-y="20">A</div><div class="body" data-body data-x="190" data-y="80">B</div><div class="body" data-body data-x="340" data-y="10">C</div><div class="body" data-body data-x="510" data-y="130">D</div></section><pre class="code">new GravityField(container, {
+  gravity: 980,
+  bounce: 0.72,
+  air: 0.995
+});</pre></main><script type="module">import{GravityField}from"../src/index.js";new GravityField(document.querySelector('[data-gravity]'),{gravity:980,bounce:.73,air:.995});</script></body></html>

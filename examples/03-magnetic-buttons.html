@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Magnetic Buttons</title><link rel="stylesheet" href="shared.css"></head><body><main class="wrap"><a href="index.html">Back</a><h1 class="demo-title">Magnetic buttons</h1><p class="lead">Move near the controls. Attraction gets stronger as the pointer approaches the center.</p><section class="stage" style="display:flex;gap:50px;align-items:center;justify-content:center;flex-wrap:wrap"><button class="magnetic primary" data-magnet>Launch</button><button class="magnetic" data-magnet>Explore</button><button class="magnetic" data-magnet>Contact</button></section><pre class="code">new MagneticButton(button, {
+  radius: 150,
+  strength: 0.42,
+  scale: 1.08
+});</pre></main><script type="module">import{MagneticButton}from"../src/index.js";document.querySelectorAll('[data-magnet]').forEach(el=>new MagneticButton(el,{radius:160,strength:.44,scale:1.08}));</script></body></html>

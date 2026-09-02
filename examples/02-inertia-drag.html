@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inertia Drag</title><link rel="stylesheet" href="shared.css"></head><body><main class="wrap"><a href="index.html">Back</a><h1 class="demo-title">Inertia and drag resistance</h1><p class="lead">Throw the block. Pointer velocity becomes release momentum while edges resist over-drag.</p><section class="stage drag-zone"><div class="drag-item" data-drag>DRAG</div></section><pre class="code">new InertiaDrag(element, {
+  friction: 0.93,
+  resistance: 0.3,
+  bounds: () => ({ minX: 0, maxX: 700, minY: 0, maxY: 280 })
+});</pre></main><script type="module">import{InertiaDrag}from"../src/index.js";const zone=document.querySelector('.drag-zone'),el=document.querySelector('[data-drag]');new InertiaDrag(el,{friction:.93,resistance:.28,bounds:()=>({minX:0,maxX:Math.max(0,zone.clientWidth-el.offsetWidth-56),minY:0,maxY:Math.max(0,zone.clientHeight-el.offsetHeight-56)})});</script></body></html>

@@ -1,0 +1,15 @@
+{
+  "name": "motion-physics-collection",
+  "version": "1.0.0",
+  "description": "Dependency-free realistic interface motion primitives for modern browsers.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python3 -m http.server 8080",
+    "check": "node --check src/index.js && node --test"
+  },
+  "keywords": ["physics","animation","spring","inertia","magnetic-button","momentum-scroll","vanilla-js"],
+  "license": "MIT"
+}
